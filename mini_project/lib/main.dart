@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
+    return ChangeNotifierProvider<DataManager>(
       create: (context) => DataManager(),
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
