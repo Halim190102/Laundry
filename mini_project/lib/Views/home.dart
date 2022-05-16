@@ -2,7 +2,7 @@ import 'package:bottom_animation/bottom_animation.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mini_project/Component/Theme/theme.dart';
-import 'package:mini_project/Provider/db_data_manager.dart';
+import 'package:mini_project/View Model/db_data_manager.dart';
 import 'package:mini_project/Views/Body_screen/Consumer/consumer.dart';
 import 'package:mini_project/Views/Body_screen/body_1.dart';
 import 'package:mini_project/Views/Bottom_sheet_screen/bottom_sheet.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:mini_project/Provider/db_data_manager.dart';
+import 'package:mini_project/View Model/db_data_manager.dart';
 import 'package:mini_project/Views/Splash_screen/splash.dart';
 import 'package:provider/provider.dart';
 

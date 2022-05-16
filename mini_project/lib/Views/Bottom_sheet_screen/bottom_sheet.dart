@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:mini_project/Provider/db_data_manager.dart';
+import 'package:mini_project/View Model/db_data_manager.dart';
 import 'package:mini_project/Views/Login_screen/login.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';

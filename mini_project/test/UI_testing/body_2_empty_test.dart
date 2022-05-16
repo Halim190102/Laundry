@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mini_project/Views/Body_screen/Consumer/Body2_screen/body_2_empty_screen.dart';
+import 'package:mini_project/Views/Body_screen/Consumer/Body2_screen/body_2_empty.dart';
 
 Widget empty() => const MaterialApp(
       home: Scaffold(

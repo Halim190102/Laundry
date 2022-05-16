@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:mini_project/Component/Reusable%20TextField/reusable_textfield.dart';
 import 'package:mini_project/Component/Reusble%20ListTile/reusable_listtile.dart';
 import 'package:mini_project/Component/Theme/theme.dart';
-import 'package:mini_project/Provider/db_data_manager.dart';
+import 'package:mini_project/View Model/db_data_manager.dart';
 import 'package:mini_project/Views/home.dart';
 import 'package:provider/provider.dart';
 

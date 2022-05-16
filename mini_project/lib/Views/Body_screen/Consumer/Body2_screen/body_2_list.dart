@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:mini_project/Provider/db_data_manager.dart';
+import 'package:mini_project/View Model/db_data_manager.dart';
 import 'package:mini_project/Views/Body_screen/Consumer/Body2_screen/Dialog_screen/dialog.dart';
 
 class Body2ListScreen extends StatefulWidget {
