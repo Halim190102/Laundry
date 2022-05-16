@@ -5,7 +5,7 @@ import 'package:mini_project/Views/Body_screen/Consumer/Body2_screen/Dialog_scre
 
 class Body2ListScreen extends StatefulWidget {
   const Body2ListScreen({Key? key, required this.data}) : super(key: key);
-  final DataManager data;
+  final DataManager? data;
 
   @override
   State<Body2ListScreen> createState() => _Body2ListScreenState();
@@ -18,7 +18,7 @@ class _Body2ListScreenState extends State<Body2ListScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final _allData = widget.data;
+    final _allData = widget.data!;
     return ListView.builder(
       physics: const BouncingScrollPhysics(),
       itemCount: _allData.jumlahData,
