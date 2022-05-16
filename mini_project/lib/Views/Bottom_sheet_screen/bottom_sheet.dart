@@ -42,22 +42,33 @@ class _BottomSheetsState extends State<BottomSheets> {
   Widget build(BuildContext context) {
     final data = Provider.of<DataManager>(context).allData;
     return Padding(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(15),
       child: Column(
         children: [
           const CircleAvatar(
-            radius: 75,
+            radius: 70,
             backgroundImage: AssetImage('assets/image/user.png'),
           ),
           const SizedBox(height: 25),
           Text(
             email,
             style: const TextStyle(
-              fontSize: 25,
+              fontSize: 23,
               fontWeight: FontWeight.w600,
             ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 15),
+          ListTile(
+            title: const Text('Pengaturan'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () {},
+          ),
+          ListTile(
+            title: const Text('FAQ'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () {},
+          ),
+          const SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -77,6 +88,9 @@ class _BottomSheetsState extends State<BottomSheets> {
                     );
                   }
                 },
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.brown,
+                ),
                 child: const Text('Keluar'),
               ),
             ],
