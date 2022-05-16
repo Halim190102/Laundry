@@ -78,9 +78,13 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: Container(
-        color: ThemesColor().primaryBody,
-        child: _pages.elementAt(_selectednavbar),
+      body: Stack(
+        children: [
+          Container(
+            color: ThemesColor().primaryBody,
+          ),
+          _pages.elementAt(_selectednavbar),
+        ],
       ),
       bottomNavigationBar: BottomAnimation(
         barHeight: 65,
