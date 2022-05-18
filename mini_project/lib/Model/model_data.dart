@@ -1,5 +1,5 @@
 class IsiData {
-  String? createdAt, id, baju, celana, harga, setrika, icon;
+  String? createdAt, id, baju, celana, harga, icon;
 
   IsiData({
     this.createdAt,
@@ -7,7 +7,6 @@ class IsiData {
     this.baju,
     this.celana,
     this.harga,
-    this.setrika,
     this.icon,
   });
 }
