@@ -1,12 +1,12 @@
 class IsiData {
-  String? createdAt, id, baju, celana, harga, icon;
+  String createdAt, id, baju, celana, harga, icon;
 
   IsiData({
-    this.createdAt,
-    this.id,
-    this.baju,
-    this.celana,
-    this.harga,
-    this.icon,
+    required this.createdAt,
+    required this.id,
+    required this.baju,
+    required this.celana,
+    required this.harga,
+    required this.icon,
   });
 }

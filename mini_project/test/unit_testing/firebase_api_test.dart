@@ -14,7 +14,18 @@ void main() async {
       test(
         'get all data',
         () async {
-          when(dataAPI.getData()).thenAnswer((_) async => <IsiData>[IsiData()]);
+          when(dataAPI.getData()).thenAnswer(
+            (_) async => <IsiData>[
+              IsiData(
+                baju: 'a',
+                celana: 'a',
+                createdAt: 'a',
+                harga: 'a',
+                icon: 'a',
+                id: 'a',
+              ),
+            ],
+          );
           var data = await dataAPI.getData();
           expect(data.isNotEmpty, true);
         },

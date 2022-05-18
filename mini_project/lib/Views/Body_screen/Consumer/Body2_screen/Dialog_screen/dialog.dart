@@ -26,7 +26,7 @@ class DialogInformation extends StatelessWidget {
                 ),
                 const SizedBox(width: 20),
                 Text(
-                  isi.baju.toString() + ' potong',
+                  isi.baju + ' potong',
                 ),
               ],
             ),
@@ -40,12 +40,12 @@ class DialogInformation extends StatelessWidget {
                 ),
                 const SizedBox(width: 20),
                 Text(
-                  isi.celana.toString() + ' potong',
+                  isi.celana + ' potong',
                 ),
               ],
             ),
             const SizedBox(height: 3),
-            isi.icon.toString() == '0.1'
+            isi.icon == '0.1'
                 ? Row(
                     children: [
                       Image.asset(
@@ -78,7 +78,7 @@ class DialogInformation extends StatelessWidget {
                 ),
                 const SizedBox(width: 20),
                 Text(
-                  isi.harga.toString(),
+                  isi.harga,
                 ),
                 const SizedBox(height: 5),
               ],

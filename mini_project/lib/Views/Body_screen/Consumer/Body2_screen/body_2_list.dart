@@ -24,7 +24,7 @@ class _Body2ListScreenState extends State<Body2ListScreen> {
       itemCount: _allData.jumlahData,
       itemBuilder: (context, i) {
         final data = _allData.allData[i];
-        var id = data.id.toString();
+        var id = data.id;
         return InkWell(
           onLongPress: () async {
             await showDialog(
@@ -87,7 +87,7 @@ class _Body2ListScreenState extends State<Body2ListScreen> {
                       'Pesanan',
                     ),
                     subtitle: Text(
-                      data.createdAt.toString(),
+                      data.createdAt,
                     ),
                   ),
                 ),
