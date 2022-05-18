@@ -23,7 +23,7 @@ class DataManager with ChangeNotifier {
           'celana': celana,
           'harga': harga,
           'icon': icon,
-          'createdAt': DateFormat("d MMM, hh:mm:ss").format(dateTimeNow),
+          'createdAt': DateFormat("d MMM, HH:mm:ss").format(dateTimeNow),
         },
       );
       if (response.statusCode! >= 200 && response.statusCode! < 300) {
@@ -34,7 +34,7 @@ class DataManager with ChangeNotifier {
             celana: celana,
             harga: harga,
             icon: icon,
-            createdAt: DateFormat("d MMM, hh:mm:ss").format(dateTimeNow),
+            createdAt: DateFormat("d MMM, HH:mm:ss").format(dateTimeNow),
           ),
         );
         notifyListeners();

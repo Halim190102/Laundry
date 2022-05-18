@@ -9,53 +9,55 @@ class Body1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(12),
-      child: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Text('Ayo Pesan Sekarang !!!'),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const AddData(),
-                    ),
-                  );
-                },
-                child: const Icon(Icons.add),
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.brown,
-                ),
-              )
-            ],
-          ),
-          const SizedBox(height: 10),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 8),
-            padding: const EdgeInsets.only(left: 35, top: 5),
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
+    return SingleChildScrollView(
+      child: Container(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text('Ayo Pesan Sekarang !!!'),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AddData(),
+                      ),
+                    );
+                  },
+                  child: const Icon(Icons.add),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.brown,
+                  ),
+                )
+              ],
             ),
-            child: const ContainerProduct(),
-          ),
-          const GoogleMaps(),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 8),
-            padding: const EdgeInsets.only(left: 12, right: 12, top: 5),
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
+            const SizedBox(height: 10),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 8),
+              padding: const EdgeInsets.only(left: 35, top: 5),
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const ContainerProduct(),
             ),
-            child: const ContainerAbout(),
-          )
-        ],
+            const GoogleMaps(),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 8),
+              padding: const EdgeInsets.only(left: 12, right: 12, top: 5),
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const ContainerAbout(),
+            )
+          ],
+        ),
       ),
     );
   }
