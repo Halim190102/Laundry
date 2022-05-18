@@ -1,3 +1,4 @@
+import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mini_project/Component/Reusable%20TextField/reusable_textfield.dart';
@@ -92,6 +93,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       valid: (value) {
                         if (value!.isEmpty) {
                           return 'Enter some Email';
+                        } else if (!EmailValidator.validate(value)) {
+                          return 'Masukkan format yang sesuai';
                         }
                         return null;
                       },

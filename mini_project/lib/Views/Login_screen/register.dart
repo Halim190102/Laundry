@@ -1,3 +1,4 @@
+import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mini_project/Component/Reusable%20TextField/reusable_textfield.dart';
@@ -96,6 +97,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       valid: (value) {
                         if (value!.isEmpty) {
                           return 'Enter some Email';
+                        } else if (!EmailValidator.validate(value)) {
+                          return 'Masukkan format yang sesuai';
                         } else if (value.length < 4) {
                           return 'Enter at least 4 Characters';
                         }
