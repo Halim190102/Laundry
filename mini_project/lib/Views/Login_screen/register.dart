@@ -99,8 +99,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           return 'Enter some Email';
                         } else if (!EmailValidator.validate(value)) {
                           return 'Masukkan format yang sesuai';
-                        } else if (value.length < 4) {
-                          return 'Enter at least 4 Characters';
                         }
                         return null;
                       },
